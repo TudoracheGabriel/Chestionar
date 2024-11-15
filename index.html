@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chestionar Pago</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <img src="./pago-logo-blue.svg" alt="Chestionar Pago Logo" id="top-image">
+  <container class="container">
+    <h1 id="title">Chestionar <div class="pago">Pago</div></h1>
+  <p id="description">Mulțumim că v-ați acordat timpul pentru a ne ajuta să îmbunătățim platforma.</p>
+  <form id="survey-form">
+    <label id="name-label" for="name">Nume</label>
+    <input id="name" type="text" placeholder="Numele dumneavoastră" required>
+    <label id="email-label" for="email">Adresa de email</label>
+    <input id="email" type="email" placeholder="E-mailul dumneavoastră" required>
+    <label id="number-label" for="number">Vârsta</label>
+    <input id="number" type="number" min="13" max="120" placeholder="Vârsta dumneavoastră" required>
+    <label for="dropdown">În momentul de față sunteți angajat?</label>
+    <select id="dropdown" required>
+      <option value="" disabled selected>Selectați</option>
+      <option value="full-time">Angajat Full Time</option>
+      <option value="part-time">Angajat Part Time</option>
+      <option value="student">Student</option>
+      <option value="prefer-not-to-say">Prefer să nu spun</option>
+      <option value="other">Altele...</option>
+    </select>
+    <fieldset>
+      <legend>Care este genul dumneavoastră?</legend>
+      <label><input type="radio" name="gender" value="male" required> Masculin</label>
+      <label><input type="radio" name="gender" value="female"> Feminin</label>
+      <label><input type="radio" name="gender" value="other"> Altele</label>
+    </fieldset>
+    <fieldset>
+      <legend>Ce v-ar interesa sa aveti in Pago (Selectați una sau mai multe opțiuni)</legend>
+      <label><input type="checkbox" name="interest" value="tech"> Raport cheltuieli lunare/anuale</label>
+      <label><input type="checkbox" name="interest" value="travel"> Implementare abonamente platforme Streaming</label>
+      <label><input type="checkbox" name="interest" value="sports"> Dark Mode</label>
+      <label><input type="checkbox" name="interest" value="music"> Muzică</label>
+      <label><input type="checkbox" name="interest" value="market"> Plată cu Pago la piață</label>
+      <label><input type="checkbox" name="interest" value="tickets"> Bilete de autobuz/evenimente</label>
+      <label><input type="checkbox" name="interest" value="offers"> Discount-uri pentru diferiți comercianții</label>
+      <label><input type="checkbox" name="interest" value="lidlIsLife"> Revista Lidl</label>
+    </fieldset>
+    <label for="comments">Comentarii suplimentare</label>
+    <textarea id="comments" rows="4" placeholder="Scrieți aici"></textarea>
+    <button id="submit" type="submit">Trimite</button>
+  </form>
+  </container>
+
+</body>
+</html>
